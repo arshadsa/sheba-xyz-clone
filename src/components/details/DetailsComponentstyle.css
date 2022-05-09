@@ -1,0 +1,33 @@
+#usp {
+    background-color: #fafbfc;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.home-header {
+    padding-bottom: 20px;
+}
+
+.home-header p {
+    color: rgba(0,0,0,.8);
+    text-transform: uppercase;
+    line-height: 1.29;
+    position: relative;
+    padding-left: 40px;
+    font-weight: 500;
+}
+
+.home-header p:before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #979797;
+}
+
+.regular-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+}
