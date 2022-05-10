@@ -1,4 +1,5 @@
 import React from "react";
+import './HomeHeaderStyle.css'
 
 const HomeHeader = ({regularParagraph, title}) => {
   return (

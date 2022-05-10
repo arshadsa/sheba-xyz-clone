@@ -4,9 +4,6 @@
     margin-top: 40px;
 }
 
-.home-header {
-    padding-bottom: 20px;
-}
 
 .home-header p {
     color: rgba(0,0,0,.8);
@@ -27,10 +24,7 @@
     background-color: #979797;
 }
 
-.regular-paragraph {
-    font-size: 14px;
-    font-weight: 400;
-}
+
 
 #usp .usp-section__item {
     background-color: #fff;

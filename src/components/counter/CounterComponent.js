@@ -1,5 +1,5 @@
 import React from "react";
-import './CounterComponent.css'
+import './CounterComponentStyle.css'
 import CounterSectionComponent from "./CounterSectionComponent";
 
 const CounterComponent = () => {
