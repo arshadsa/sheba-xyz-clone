@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Shared/Header/Header";
 import Footer from "../Shared/Footer/Footer";
-
 import "./home.css";
+import ServicesComponent from "../../Components/ServicesComponent/ServicesComponent";
 
 const Home = () => {
   return (
@@ -20,9 +20,9 @@ const Home = () => {
         className=""
         style={{ height: "200vh", minHeight: "200vh", backgroundColor: "red" }}
       ></div> */}
+      <ServicesComponent></ServicesComponent>
       <Footer />
     </div>
-  );
 };
 
 export default Home;
