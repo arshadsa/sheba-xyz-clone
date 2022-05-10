@@ -23,6 +23,6 @@ const Home = () => {
       <ServicesComponent></ServicesComponent>
       <Footer />
     </div>
-};
+)};
 
 export default Home;
