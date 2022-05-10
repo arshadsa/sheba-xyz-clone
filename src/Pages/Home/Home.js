@@ -4,6 +4,13 @@ import Footer from "../Shared/Footer/Footer";
 import "./home.css";
 import ServicesComponent from "../../Components/ServicesComponent/ServicesComponent";
 
+import CounterComponent from "../../Components/counter/CounterComponent";
+import DetailsComponents from "../../Components/details/DetailsComponent";
+import ProcessComponent from "../../Components/process/ProcessComponent";
+
+
+
+
 const Home = () => {
   return (
     <div
@@ -21,6 +28,10 @@ const Home = () => {
         style={{ height: "200vh", minHeight: "200vh", backgroundColor: "red" }}
       ></div> */}
       <ServicesComponent></ServicesComponent>
+
+      <DetailsComponents />
+      <CounterComponent />
+      <ProcessComponent />
       <Footer />
     </div>
 )};
