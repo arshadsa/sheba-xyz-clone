@@ -16,12 +16,11 @@ const DetailsComponents = () => {
             regularParagraph = 'Why Choose US'
           />
           <div className="row">
-                  {/*.............*/}
+                 
           <Container />
 
             
-                {/*.............*/}
-
+               
       </div>
       </div>
       </div>

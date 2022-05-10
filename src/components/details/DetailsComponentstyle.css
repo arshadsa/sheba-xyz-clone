@@ -31,3 +31,38 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+#usp .usp-section__item {
+    background-color: #fff;
+    padding: 30px 15px;
+    height: 110px;
+}
+
+#usp .usp-section__item__img {
+    vertical-align: middle!important;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-self: center;
+    padding-right: 10px;
+}
+
+#usp .usp-section__item__img img {
+    height: 50px;
+    width: 50px;
+}
+
+#usp .usp-section__item p {
+    margin-bottom: 0;
+    color: rgba(0,0,0,.8);
+    line-height: 1.56;
+}
+
+.default-paragraph {
+    font-size: 16px;
+    font-weight: 600;
+}
