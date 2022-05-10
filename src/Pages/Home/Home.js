@@ -13,13 +13,7 @@ const Home = () => {
         // so the components does not overflow in x axis
       }}
     >
-      <div>
-        <Header />
-      </div>
-      {/* <div
-        className=""
-        style={{ height: "200vh", minHeight: "200vh", backgroundColor: "red" }}
-      ></div> */}
+      <Header />
       <ServicesComponent></ServicesComponent>
       <Footer />
     </div>
