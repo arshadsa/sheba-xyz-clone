@@ -1,15 +1,12 @@
 import React from "react";
-import Header from "../Shared/Header/Header";
-import Footer from "../Shared/Footer/Footer";
-import "./home.css";
-import ServicesComponent from "../../Components/ServicesComponent/ServicesComponent";
-
 import CounterComponent from "../../Components/counter/CounterComponent";
 import DetailsComponents from "../../Components/details/DetailsComponent";
+import GetApp from "../../Components/GetApp/GetApp";
 import ProcessComponent from "../../Components/process/ProcessComponent";
-
-
-
+import ServicesComponent from "../../Components/ServicesComponent/ServicesComponent";
+import Footer from "../Shared/Footer/Footer";
+import Header from "../Shared/Header/Header";
+import "./home.css";
 
 const Home = () => {
   return (
@@ -26,8 +23,10 @@ const Home = () => {
       <DetailsComponents />
       <CounterComponent />
       <ProcessComponent />
+      <GetApp />
       <Footer />
     </div>
-)};
+  );
+};
 
 export default Home;
