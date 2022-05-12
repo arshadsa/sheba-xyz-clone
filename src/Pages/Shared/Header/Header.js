@@ -1,20 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
+
+
+
 
 const Header = () => {
   return (
     <header className="home-header">
       <nav className=" navbar navbar-light navbar-expand-lg">
         <div className=" container d-flex justify-content-between">
-          <button className=" btn btn-link header-logo">
+          <button className=" btn btn-link header-logo" >   
+          <Link to='/' >
+          
             <img
               src="./Images/sheba.svg"
               alt=""
               style={{ height: "35px", width: "125px" }}
             />
+          </Link>
           </button>
           <div className=" d-none d-xl-block navigation-picker">
-            <img src="./Images/location.svg" alt="" srcset="" />
+          <img src="./Images/location.svg" alt="logo" srcSet="" />
+          
+            
             <button className=" btn"> Gulsan</button>
           </div>
           <div className=" d-none d-xl-block" style={{ width: "500px" }}>
@@ -31,7 +40,7 @@ const Header = () => {
           </div>
           <div
             className=" list-unstyled d-flex justify-content-center align-content-center h-100 home-header-links "
-            style={{}}
+            
           >
             <li className=" d-xl-none header-short-search">
               <div className=" input-group">
@@ -40,7 +49,13 @@ const Header = () => {
                 </span>
               </div>
             </li>
-            <li className="">All Services</li>
+            <li className="">
+              <Link to='all-services' >
+              All Services
+              </Link>
+            
+            
+            </li>
             <li>Log In</li>
           </div>
         </div>

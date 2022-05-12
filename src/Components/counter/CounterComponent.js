@@ -5,8 +5,8 @@ import CounterSectionComponent from "./CounterSectionComponent";
 const CounterComponent = () => {
   return (
     <div id="counter">
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <CounterSectionComponent 
           sectionTitle = 'Service Providers' 
           sectionNumber = '15,000 +'  />
