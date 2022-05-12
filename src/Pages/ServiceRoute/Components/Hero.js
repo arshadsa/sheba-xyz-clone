@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './HeroStyle.css'
 
@@ -47,10 +48,10 @@ const Hero = (props) => {
       <div className=" container"  >
       <ol  className="breadcrumb">
         <li  className="breadcrumb-item">
-          <a  href="/" className="nuxt-link-active" target="_self">Home</a>
+          <Link  to="/"  target="_self">Home</Link>
         </li>
         <li  className="breadcrumb-item">
-          <a  href="/ac-repair-services" className="" target="_self">AC Repair Services</a>
+          <Link  to="/service-route/:service-category" className="" target="_self">AC Repair Services</Link>
         </li>
         <li  className="breadcrumb-item active">
           <span  aria-current="location">AC Servicing</span>
@@ -72,12 +73,7 @@ const Hero = (props) => {
             />
           </span>
         </h1>
-        <div
-          className=" badge mb-4 text-white rating-review "
-          
-        >
-          <h3>4.7 out of 5</h3><h5 className=" mb-5 text-white">(6932 ratings on 3 services)</h5>
-        </div>
+       
 
         <div  id="reviewRating">
           <div  className="rating-review"><div  className="rating" style={{position: 'relative'}}>
@@ -93,13 +89,24 @@ const Hero = (props) => {
 
 
         
-        <ul className="">
-          <li className=" h4 mb-3 text-white">24/7 Customer Support</li>
-          <li className=" h4 mb-3 text-white">
-            Trusted & Reliable Electricians
+        <ul className="service-list">          
+          <li className="service-list__item">
+            <span class="check">
+              <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
+            </span>
+            <span  class="info">Trusted &amp; Reliable AC Technicians</span>
           </li>
-          <li className="  h4 mb-3 text-white">
-            Guaranteed Customer Satisfaction
+          <li className="service-list__item">
+            <span class="check">
+              <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
+            </span>
+            <span  class="info">7 Days Post Service Warranty</span>
+          </li>
+          <li className="service-list__item">
+            <span class="check">
+              <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
+            </span>
+            <span  class="info">Well-equipped  &amp; Well-prepared Specialists to Prevent COVID-19</span>
           </li>
         </ul>
       </div>
