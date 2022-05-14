@@ -67,3 +67,7 @@ a:hover {
 .vh-100 {
   height: 100vh !important;
 }
+
+.min-vh-50 {
+  min-height: 50vh !important;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Pages/Shared/Header/Header";
-//import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Error from "./Pages/Error/Error";
 //import AllServices from "./Pages/AllServices/AllServices";
@@ -15,8 +15,8 @@ const Routing = () => {
     <Router>
       <Header /> 
       <Routes>
-        {/*<Route path="/" caseSensitive={false} element={<Home />} />
-        <Route path="/home" caseSensitive={false} element={<Home />} />*/}
+       <Route path="/" caseSensitive={false} element={<Home />} />
+        <Route path="/home" caseSensitive={false} element={<Home />} />
        
         {/*<Route
           path="/service-route/:name"

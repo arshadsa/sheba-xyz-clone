@@ -13,12 +13,7 @@ const Error = () => {
       }}
       className="mt-6"
     >
-      <div
-        classNameName="notfound-bg"
-        style={{
-          backgroundImage: `url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg")`,
-        }}
-      ></div>
+      <div classNameName="notfound-bg"></div>
       <div className="notfound">
         <div className="notfound-404">
           <h1>404</h1>
