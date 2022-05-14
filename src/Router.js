@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Error from "./Pages/Error/Error";
 import AllServices from "./Pages/AllServices/AllServices";
-import ServiceRoute from "./Pages/ServiceRoute/ServiceRoute";
+//import ServiceRoute from "./Pages/ServiceRoute/ServiceRoute";
 import Header from "./Pages/Shared/Header/Header";
 import Footer from "./Pages/Shared/Footer/Footer";
+import Service from "./Pages/Shared/Service/Service";
+
+
 
 const Routing = () => {
   return (
@@ -14,10 +17,11 @@ const Routing = () => {
       <Routes>
         <Route path="/" caseSensitive={false} element={<Home />} />
         <Route path="/home" caseSensitive={false} element={<Home />} />
+       
         <Route
           path="/service-route/:name"
           caseSensitive={false}
-          element={<ServiceRoute />}
+          element={<Service />}
         />
         {/* <Route path="/chat/:id" caseSensitive={false} element={<Chat />} /> */}
         <Route

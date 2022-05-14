@@ -8,10 +8,14 @@ import './HeroStyle.css'
 
 const Hero = (props) => {
   let { myData } = props;
+ 
+  
+  
+  
 
   const getLastWord = () => {
     let selectedWord = myData.name;
-    // console.log(a);
+    // console.log(selectedWord)
     let isContain = selectedWord?.includes("ervice");
     if (isContain) {
       return "";
