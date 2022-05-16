@@ -4,6 +4,8 @@ import Header from "./Pages/Shared/Header/Header";
 import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Error from "./Pages/Error/Error";
+import Error404 from "./Pages/PageNotFound/Error404";
+
 //import AllServices from "./Pages/AllServices/AllServices";
 //import ServiceRoute from "./Pages/ServiceRoute/ServiceRoute";
 //import Service from "./Pages/Shared/Service/Service";
@@ -29,7 +31,7 @@ const Routing = () => {
           caseSensitive={false}
           element={<AllServices />}
         />*/}
-        <Route path="*" caseSensitive={false} element={<Error />} />
+        <Route path="*" caseSensitive={false} element={<Error404 />} />
       </Routes> 
       
       

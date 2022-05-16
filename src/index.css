@@ -40,6 +40,26 @@ a:hover {
   margin-top: 10rem !important;
 }
 
+.mb-6 {
+  margin-bottom: 4.5rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 8rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 9rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 10rem !important;
+}
+
 .vh-25 {
   height: 25vh !important;
 }
