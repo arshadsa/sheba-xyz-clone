@@ -21,6 +21,7 @@ const Services = ({ category, services }) => {
           <div className="d-flex">
             {services.slice(0, 4).sort(() => Math.random() - 0.5).map((service) => (
               <Service
+              category = {category}
                 key={service.id}
                 img={service?.img}
                 text={service?.title}
