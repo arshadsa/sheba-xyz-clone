@@ -27,7 +27,7 @@ const ServicesPage = () => {
       .then((data) => data.json())
       .then((data) => {
         // setJsonData(data); //jsonDataSet
-        let MyData = data.map((item, index) => {
+        var MyData = data.map((item, index) => {
           return {
             id: index,
             name: item.name,

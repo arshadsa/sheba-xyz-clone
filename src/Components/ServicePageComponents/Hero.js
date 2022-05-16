@@ -8,6 +8,8 @@ import './HeroStyle.css'
 
 const Hero = (props) => {
   let { myData } = props;
+
+  
  
   
   
@@ -95,22 +97,22 @@ const Hero = (props) => {
         
         <ul className="service-list">          
           <li className="service-list__item">
-            <span class="check">
+            <span className="check">
               <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
             </span>
-            <span  class="info">Trusted &amp; Reliable AC Technicians</span>
+            <span  className="info">Trusted &amp; Reliable AC Technicians</span>
           </li>
           <li className="service-list__item">
-            <span class="check">
+            <span className="check">
               <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
             </span>
-            <span  class="info">7 Days Post Service Warranty</span>
+            <span  className="info">7 Days Post Service Warranty</span>
           </li>
           <li className="service-list__item">
-            <span class="check">
+            <span className="check">
               <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
             </span>
-            <span  class="info">Well-equipped  &amp; Well-prepared Specialists to Prevent COVID-19</span>
+            <span  className="info">Well-equipped  &amp; Well-prepared Specialists to Prevent COVID-19</span>
           </li>
         </ul>
       </div>
