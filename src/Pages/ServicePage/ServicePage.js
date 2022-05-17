@@ -1,12 +1,35 @@
 import React, { useState, useEffect } from "react";
 
 import { useParams, useNavigate } from "react-router-dom";
-import DropDown from "../Components/ServicePageComponents/DropDown";
-import Hero from "../Components/ServicePageComponents/Hero";
-import Main from "../Components/ServicePageComponents/Main";
+import DropDown from "../../Components/ServicePageComponents/DropDown";
+import Hero from "../../Components/ServicePageComponents/Hero";
+import Main from "../../Components/ServicePageComponents/Main";
+import { overviewData } from "./DataTemp/overViewData";
+
 
 
 const ServicesPage = () => {
+
+
+  // if this data comes from database so we don't need to use useState.If need that will seen later.   
+
+  /** */
+  
+/**
+ * 
+ */
+  const asideData = ['Service Overview','FAQ', 'Reviews', 'Details']
+
+/*** */
+
+
+
+
+
+  
+
+
+
   var { name } = useParams();
   // const [jsonData, setJsonData] = useState([]);
   const [keyWord, setKeyword] = useState(name);
@@ -71,7 +94,9 @@ const ServicesPage = () => {
      }
       <DropDown navigate={navigate} Reflect={Reflect} />
       <Hero myData={myData} />
-      <Main />
+      <Main  overviewData ={overviewData}
+      asideData={asideData}
+       />
   
     </>
   );

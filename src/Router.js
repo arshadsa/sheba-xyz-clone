@@ -8,7 +8,8 @@ import Error404 from "./Pages/PageNotFound/Error404";
 
 import AllServices from "./Pages/AllServices/AllServices";
 import Service from "./Pages/Shared/Service/Service";
-import ServicesPage from "./Pages/ServicePage";
+import ServicesPage from "./Pages/ServicePage/ServicePage";
+
 //import ServiceRoute from "./Pages/ServiceRoute/ServiceRoute";
 //import Service from "./Pages/Shared/Service/Service";
 
