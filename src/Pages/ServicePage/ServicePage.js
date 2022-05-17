@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import DropDown from "../../Components/ServicePageComponents/DropDown";
 import Hero from "../../Components/ServicePageComponents/Hero";
 import Main from "../../Components/ServicePageComponents/Main";
+import { faqData } from "./DataTemp/faqData";
 import { overviewData } from "./DataTemp/overViewData";
 
 
@@ -95,7 +96,7 @@ const ServicesPage = () => {
       <DropDown navigate={navigate} Reflect={Reflect} />
       <Hero myData={myData} />
       <Main  overviewData ={overviewData}
-      asideData={asideData}
+      asideData={asideData} faqData ={faqData}
        />
   
     </>
