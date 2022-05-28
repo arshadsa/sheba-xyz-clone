@@ -1,8 +1,11 @@
 import React from "react";
+import Advertise from "../../Components/Advertise/Advertise";
+import Banner from "../../Components/Bannner/Banner";
 import CounterComponent from "../../Components/counter/CounterComponent";
 import DetailsComponents from "../../Components/details/DetailsComponent";
 import GetApp from "../../Components/GetApp/GetApp";
 import ProcessComponent from "../../Components/process/ProcessComponent";
+import ServicesAdd from "../../Components/ServicesAdd/ServicesAdd";
 import ServicesComponent from "../../Components/ServicesComponent/ServicesComponent";
 import Footer from "../Shared/Footer/Footer";
 import Header from "../Shared/Header/Header";
@@ -18,8 +21,11 @@ const Home = () => {
       }}
     >
       <Header />
-      <ServicesComponent></ServicesComponent>
+      <Banner></Banner>
+      <ServicesAdd />
+      <Advertise></Advertise>
 
+      <ServicesComponent></ServicesComponent>
       <DetailsComponents />
       <CounterComponent />
       <ProcessComponent />
