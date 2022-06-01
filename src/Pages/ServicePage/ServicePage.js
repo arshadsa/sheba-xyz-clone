@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DropDown from "../../Components/ServicePageComponents/DropDown";
 import Hero from "../../Components/ServicePageComponents/Hero";
+//import Hero from "../../Components/ServicePageComponents/Hero copy";
 import Main from "../../Components/ServicePageComponents/Main";
 import { faqData } from "./DataTemp/faqData";
 import { overviewData } from "./DataTemp/overViewData";
@@ -51,7 +52,7 @@ const ServicesPage = () => {
       .then((data) => data.json())
       .then((data) => {
         // setJsonData(data); //jsonDataSet
-        var MyData = data.map((item, index) => {
+        data.map((item, index) => {
           return {
             id: index,
             name: item.name,
@@ -88,6 +89,8 @@ const ServicesPage = () => {
         setMyData(realChildren);
       });
   }, [keyWord]);
+  console.log(myData);
+  
 
   return (
     <>

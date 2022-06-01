@@ -19,8 +19,8 @@ const ServicePageBody = ({overviewData}) => {
         ) )
       }
     </div>
-    <div   id="faq" class="faq-section left faq">
-      <h3  class="section-heading">FAQ</h3>
+    <div   id="faq"  className="faq-section left faq">
+      <h3   className="section-heading">FAQ</h3>
       <FaqCartComponent />
       
       

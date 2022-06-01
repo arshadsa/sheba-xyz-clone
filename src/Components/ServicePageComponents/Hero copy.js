@@ -6,9 +6,8 @@ import './HeroStyle.css'
 
 
 
-const Hero = ( props) => {
-let { myData } = props; 
- 
+const Hero = (props) => {
+  let { myData } = props;  
   
   
 
@@ -22,26 +21,33 @@ let { myData } = props;
       return "Service";
     }
   };
-
-
-
   return (
-    <div  id="category-service-banner " className=" mb-4">
-
-<div className=" banner-padding"
-    style={{
-      background: 'linear-gradient(270deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) center center / cover no-repeat, url(https://s3.ap-south-1.amazonaws.com/cdn-shebaxyz/images/categories_images/banners/1619428659_plumbingsanitaryservices.jpg), url(https://s3.ap-south-1.amazonaws.com/cdn-marketplacexyz/live/img/55541bd.png)'
-    }}
-    
-    >
-    
-    <div   
-    style={{display: 'none'}}
-    >
-      <p> AC Repair Services </p> 
-    </div> 
-    <div className="service-badge  pb-2">
-    <div className="banner-container container">
+    <div className="service-badge" style={{ position: "relative", height: "50vh", zIndex: 1 }}>
+      <img className=""
+        src='service-image.webp'
+        alt=" "
+        style={{
+          height: "50vh",
+          width: "100%",
+          position: "absolute",
+          top: "0px",
+          objectFit: "cover",
+          zIndex: -2,
+        }}
+      />
+      <div
+        style={{
+          height: "50vh",
+          width: "100%",
+          position: "absolute",
+          top: "0px",
+          objectFit: "cover",
+          zIndex: -1,
+          backgroundColor: "black",
+          opacity: "0.3",
+        }}
+      ></div>
+      <div className=" container"  >
       <ol  className="breadcrumb">
         <li  className="breadcrumb-item">
           <Link  to="/"  target="_self">Home</Link>
@@ -52,13 +58,12 @@ let { myData } = props;
         <li  className="breadcrumb-item active">
           <span  aria-current="location">AC Servicing</span>
         </li>
-      </ol> 
-      <div   style={{marginTop: '0px'}}>
-        <div   className="badge-section">
-          <h1 className=" d-flex pt-3 text-white mb-4 service-title">
-          AC Servicing
+      </ol>
+
+
+        <h1 className=" d-flex pt-5 text-white mb-4 service-title">
         
-            {/*{myData.name}*/}
+            {myData.name}
              {/*{getLastWord()
              }*/}
           
@@ -70,21 +75,23 @@ let { myData } = props;
             />
           </span>
         </h1>
-        </div> 
-        
+       
+
         <div  id="reviewRating">
-          <div  className="rating-review">
-            <div  className="rating" style={{position: 'relative'}}>
-              <img  src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/star-white.svg" 
-              alt={myData.name} 
-              style={{width: "24px", height: '24px'}} /> 
-              <span  className="average-rating text-white fw-bold">4.67</span> 
-              <span  className="total-rating text-white fw-semibold">out of 5</span>
+          <div  className="rating-review"><div  className="rating" style={{position: 'relative'}}>
+            <img  src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/star-white.svg" 
+            alt={myData.name} 
+            style={{width: "24px", height: '24px'}} /> 
+            <p  className="average-rating">4.67</p> 
+            <p  className="total-rating">out of 5</p>
             </div> 
-            </div> 
-          <div  className="review fw-bold"><p >(25015 ratings on 5 services)</p></div>
-            </div>
-         <ul className="service-list mb-4">          
+            </div> <div  className="review"><p >(25015 ratings on 5 services)</p></div></div>
+
+
+
+
+        
+        <ul className="service-list">          
           <li className="service-list__item">
             <span className="check">
               <img src="https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/svg/check.svg" alt="Check"/>
@@ -106,12 +113,6 @@ let { myData } = props;
         </ul>
       </div>
     </div>
-  </div>
-</div>
-    </div>
-
-   
-   
   );
 };
 
