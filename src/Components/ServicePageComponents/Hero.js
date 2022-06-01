@@ -7,11 +7,7 @@ import './HeroStyle.css'
 
 
 const Hero = (props) => {
-  let { myData } = props;
-
-  
- 
-  
+  let { myData } = props;  
   
   
 
@@ -28,8 +24,8 @@ const Hero = (props) => {
   return (
     <div className="service-badge" style={{ position: "relative", height: "50vh", zIndex: 1 }}>
       <img
-        src={myData.thumb}
-        alt=""
+        src='service-image.webp'
+        alt=" frihu hg98"
         style={{
           height: "50vh",
           width: "100%",
