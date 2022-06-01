@@ -6,7 +6,7 @@ import "./AllServicesAside.css";
 
 
 const AllServicesAside = (props) => {
-  const { asideData } = props;
+  const { asideData,  } = props;
 
 
   return (

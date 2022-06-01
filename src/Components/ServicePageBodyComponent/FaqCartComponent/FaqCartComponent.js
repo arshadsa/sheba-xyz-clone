@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
-const FaqCartComponent = () => {
+import "./FaqCartComponent.css"
+
+
+
+
+const FaqCartComponent = ({cardHeader, cardText}) => {
+
+    const[isOpen, setIsOpen] = useState(false);
+    console.log(isOpen);
+    
+
+
+
   return (
-      <div  className="card mb-1">
-        <header   className="card-header p-1">
-            <h3  target="_self" href="#" className="btn btn-link btn-block">            
-                <span  className="when-opened">-</span> 
-                <span  className="when-closed">+</span>
-                Do I have to pay any charge if I don’t take any service? 
+      <div  className=" mb-1">
+        <header   className=" p-1">
+            <h3  onClick={()=>setIsOpen(prev=>!prev)} className="faq-btn   fw-bold">  
+            {
+                isOpen ?<div  className="when-opened fw-bold">-</div>:<div  className="when-closed fw-bold">+</div>
+            }          
+                 
+                
+                {cardHeader}
             </h3>
         </header> 
-        <div  id="accordion-0" className="collapse show" >
+        {
+            isOpen && <div  className="faq-ans ">
             <div  className="card-body">
-                <p  className="card-text">If you don’t avail any services for your AC after our Service Provider send a technician at your doorstep then you only have to pay the visiting charge which is BDT 100.  
+                <p  className="card-text">{cardText}
                 </p>
             </div>
         </div>
+        }
+        
     </div>
   )
 };

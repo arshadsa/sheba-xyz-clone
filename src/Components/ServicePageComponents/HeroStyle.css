@@ -110,8 +110,8 @@
 .service-list__item .check {
   position: absolute;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   line-height: 16px;
   border-radius: 50%;
   background-image: linear-gradient(135deg, #fff 100%, #fff 0, #fff 0);
