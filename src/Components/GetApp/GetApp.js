@@ -1,5 +1,7 @@
 import React from "react";
-import HomeHeader from "../globalComponents/homeheader/HomeHeader";
+import HomeSectionHeader from "../../Pages/Shared/HomeSectionHeader/HomeSectionHeader";
+
+//import HomeHeader from "../globalComponents/homeheader/HomeHeader";
 import "./GetApp.css";
 const GetApp = () => {
   return (
@@ -14,7 +16,7 @@ const GetApp = () => {
           </div>
         </div>
         <div className="col-lg-6 mt-5">
-          <HomeHeader
+          <HomeSectionHeader
             regularParagraph="DOWNLOAD OUR APP"
             title="Any Service, Any Time, Anywhere."
           />
