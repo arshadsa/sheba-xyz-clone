@@ -24,8 +24,8 @@ const UserSeftyContainer = () => {
 
                    />                  
                   </div> 
-                  <div className="clear"></div> 
-                  <div className="row ml-0">
+                  
+                  <div className="row ml-0 mt-4">
                      <UspSection 
                   iconSrc = 'https://cdn-marketplacexyz.s3.ap-south-1.amazonaws.com/sheba_xyz/images/png/usp_sanitized.png'
                   iconPunch1 = "Sanitising"
