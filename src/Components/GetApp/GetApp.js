@@ -1,5 +1,7 @@
 import React from "react";
-import HomeHeader from "../globalComponents/homeheader/HomeHeader";
+import HomeSectionHeader from "../../Pages/Shared/HomeSectionHeader/HomeSectionHeader";
+
+//import HomeHeader from "../globalComponents/homeheader/HomeHeader";
 import "./GetApp.css";
 const GetApp = () => {
   return (
@@ -14,7 +16,7 @@ const GetApp = () => {
           </div>
         </div>
         <div className="col-lg-6 mt-5">
-          <HomeHeader
+          <HomeSectionHeader
             regularParagraph="DOWNLOAD OUR APP"
             title="Any Service, Any Time, Anywhere."
           />
@@ -22,16 +24,16 @@ const GetApp = () => {
             Give us your mobile number. You’ll get an SMS with the app download
             link.
           </p>
-          <div class="input-group mb-3 w-75 my-4">
+          <div  className="input-group mb-3 w-75 my-4">
             <input
               type="text"
-              class="form-control py-1"
+               className="form-control py-1"
               placeholder="Type Your Mobile Number"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
             />
             <button
-              class="btn btn-lg app-btn fw-bold text-white px-2 rounded-end rounded-4"
+               className="btn btn-lg app-btn fw-bold text-white px-2 rounded-end rounded-4"
               type="button"
               id="button-addon2"
             >

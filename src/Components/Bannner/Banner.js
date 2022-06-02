@@ -17,15 +17,15 @@ const Banner = () => {
               <span className="btn-title">Gulshan</span>
             </button>
           </div>
-          <div class="input-group ">
+          <div  className="input-group ">
             <input
               type="text"
-              class="form-control banner-input"
+               className="form-control banner-input"
               placeholder="Find your service here e.g. AC, Car, Facial …"
               aria-label="Username"
               aria-describedby="basic-addon1"
             />
-            <span class="input-group-text search-btn">
+            <span  className="input-group-text search-btn">
               <FaSearch className="search-icon" />
             </span>
           </div>

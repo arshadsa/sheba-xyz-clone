@@ -4,7 +4,7 @@ import UspSection from "./UspSection";
 
 
 
-const Container = () => {
+const UserSeftyContainer = () => {
   return (
       <div className="usp-section container">            
               <div className="row d-flex">
@@ -51,4 +51,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default UserSeftyContainer;

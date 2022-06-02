@@ -1,23 +1,23 @@
 import React from "react";
-import HomeHeader from "../globalComponents/homeheader/HomeHeader";
-import Container from "./detail-components/container";
+import HomeSectionHeader from "../../Pages/Shared/HomeSectionHeader/HomeSectionHeader";
+import UserSeftyContainer from "../../Pages/Shared/UserSeftyShared-Component/UserSeftyContainer";
 import './DetailsComponentstyle.css'
 
 
-const DetailsComponents = () => {
+const UserSeftyComponent = () => {
   return (
     <>
 
     <div id="details">    
       <div id="usp">      
         <div className="container">
-          <HomeHeader 
+          <HomeSectionHeader 
             title = 'Because we care about your safety..'
             regularParagraph = 'Why Choose US'
           />
           <div className="row">
                  
-          <Container />
+          <UserSeftyContainer />
 
             
                
@@ -31,4 +31,4 @@ const DetailsComponents = () => {
   )
 };
 
-export default DetailsComponents;
+export default UserSeftyComponent;

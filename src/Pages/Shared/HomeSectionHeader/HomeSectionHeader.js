@@ -1,7 +1,8 @@
 import React from "react";
-import './HomeHeaderStyle.css'
+import './HomeSectionHeaderStyle.css'
 
-const HomeHeader = ({regularParagraph, title}) => {
+const HomeSectionHeader = ({regularParagraph, title}) => {
+  
   return (
       <div className="row ml-0 mr-0">
             <div className="home-header">
@@ -15,4 +16,4 @@ const HomeHeader = ({regularParagraph, title}) => {
   )
 };
 
-export default HomeHeader;
+export default HomeSectionHeader;
